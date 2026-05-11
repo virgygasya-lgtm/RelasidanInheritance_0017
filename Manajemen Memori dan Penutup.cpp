@@ -11,4 +11,13 @@ int main() { //agregasi
     anak* varAnak2 = new anak("rini");
     anak* varAnak3 = new anak("Dewi");
 
-    
+    delete varIbu;
+    delete varibu2;
+    delete varAnak1;
+    delete varAnak2;
+    delete varAnak3;
+
+    system("pause");
+
+    return 0;
+}
