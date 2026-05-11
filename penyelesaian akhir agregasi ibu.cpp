@@ -7,11 +7,6 @@ public:
     string nama;
     vector<anak*> daftar_anak;
 
-    void tambahAnak(anak*);
-    void cetakAnak();
-};
-
-// Masukkan ini ke dalam class ibu di bawah daftar_anak
     ibu(string pNama) :nama(pNama) {
         cout << "Ibu \"" << nama << "\" ada\n";
     }
@@ -19,7 +14,10 @@ public:
         cout << "Ibu \"" << nama << "\" tidak ada\n";
     }
 
-    // Bagian ini diletakkan di luar class (setelah tanda };)
+    void tambahAnak(anak*);
+    void cetakAnak();
+};
+
 void ibu::tambahAnak(anak* pAnak) {
     daftar_anak.push_back(pAnak);
 }
